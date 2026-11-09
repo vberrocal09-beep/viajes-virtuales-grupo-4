@@ -4,51 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Viajes Virtuales - Inicio</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-
   <header>
-    <h1>Viajes Virtuales</h1>
-    <nav>
-      <a href="index.html">Inicio</a> |
-      <a href="index.html#destinos">Destinos</a> |
-      <a href="nosotros.html">Nosotros</a>
-    </nav>
-    <hr>
-  </header>
+    <div class="container">
+      <p class="logo">Viajes Virtuales</p>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#nuestros-destinos">Destinos</a>
+        <a href="nosotros.html">Nosotros</a>
+      </nav>
+    </div>
+  </header>  
 
-  <main>
-    <h2>Descubre el mundo desde aquí</h2>
-    <p>Viajes Virtuales es una agencia de viajes en línea que te muestra increíbles destinos turísticos. En cada página encontrarás una descripción del lugar, los sitios que puedes visitar, una lista de precios estimados, el tiempo de estadía recomendado, imágenes y un video para planificar tu próxima aventura.</p>
+  <section id="img-introduccion">
+    <div class="container" style="background-image:linear-gradient(rgb(0,0,0,0.5),rgba(50, 47, 47, 0.5)) ,url(https://img.magnific.com/foto-gratis/paraiso-playa-tropical-palmeras-agua-turquesa_23-2151975534.jpg);">
+        <h1>Viajes Virtuales</h1>
+        <p><strong>Descubre el mundo desde aquí</strong><br>
+          Somos una agencia de viajes que te muestra increíbles destinos turísticos, con información útil para planificar tu proxima aventura
+        </p>
+      </div>
+  </section>
 
-    <h2 id="destinos">Nuestros destinos</h2>
-    <ul>
-    <li>
-      <h3><a href="suiza.html">Suiza</a></h3>
-      <p>Montañas, lagos y ciudades impecables en el corazón de Europa. <a href="suiza.html">Ver más</a></p>
-    </li>
-    <li>
-      <h3><a href="portugal.html">Portugal</a></h3>
-      <p>Historia, playas, vinos y ciudades llenas de encanto. <a href="portugal.html">Ver más</a></p>
-    </li>
-    <li>
-      <h3><a href="peru.html">Machu Picchu, Perú</a></h3>
-      <p>La ciudadela inca en los Andes peruanos. <a href="peru.html">Ver más</a></p>
-    </li>
-    <li>
-      <h3><a href="italia.html">Italia</a></h3>
-      <p>Arte, historia y gastronomía en cada ciudad. <a href="italia.html">Ver más</a></p>
-    </li>
-    </ul>
+  <section id="nuestros-destinos">
+    <div class="container">
+      <h2>Nuestros Destinos</h2>
+      <div id="lugares">
+        <div class="cartas">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/3840px-Colosseo_2020.jpg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="El Coliseo de Roma, Italia">
+          <h3>Italia</h3>
+          <form action="italia.html"><button>Ver más</button></form>
+        </div>
+        
+        <div class="cartas">
+          <img src="https://content.r9cdn.net/rimg/dimg/4c/ac/7e6077e1-city-45618-165ce416a23.jpg?crop=true&width=1020&height=498" alt="Ciudadela de Machu Picchu, Perú">
+          <h3>Perú</h3>
+          <form action="peru.html"><button>Ver más</button></form>
+        </div>
+        
+        <div class="cartas">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Torre_Bel%C3%A9m_April_2009-4a.jpg?width=800" alt="Torre de Belém, Lisboa, Portugal">
+          <h3>Portugal</h3>
+          <form action="portugal.html"><button>Ver más</button></form>
+        </div>
 
-    <h2>Sobre nosotros</h2>
-    <p>Conoce más sobre el <a href="nosotros.html">equipo de trabajo</a> que creó este sitio.</p>
-  </main>
+        <div class="cartas">
+          <img src="https://hips.hearstapps.com/hmg-prod/images/ciudades-mas-bonitas-suiza-escapada-lauterbrunnen-66852f4c73851.jpg" alt="Valle de Lauterbrunnen, Suiza">
+          <h3>Suiza</h3>
+          <form action="suiza.html"><button>Ver más</button></form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-nosotros">
+    <div class="container">
+      <h2>Sobre nosotros</h2>
+      <p>Conoce más sobre el <a href="nosotros.html">equipo de trabajo</a> que creó este sitio.</p>
+    </div>
+  </section>
 
   <footer>
-    <hr>
     <p>&copy; 2026 Viajes Virtuales - Grupo #4 - Desarrollo de Software V - UTP</p>
   </footer>
-
 </body>
 </html>
