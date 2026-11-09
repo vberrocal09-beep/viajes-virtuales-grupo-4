@@ -3,66 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">-->
   <title>Italia - Viajes Virtuales</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
   <header>
-    <h1>Viajes Virtuales</h1>
-    <nav>
-      <a href="index.html">Inicio</a> |
-      <a href="index.html#destinos">Destinos</a> |
-      <a href="nosotros.html">Nosotros</a>
-    </nav>
-    <hr>
-  </header>
+    <div class="container">
+      <p class="logo">Viajes Virtuales</p>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#nuestros-destinos">Destinos</a>
+        <a href="nosotros.html">Nosotros</a>
+      </nav>
+    </div>
+  </header> 
 
-  <main>
-    <h2>Italia</h2>
-    <p><em>Arte, historia y buena mesa</em></p>
-    <p><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Colosseo_2020.jpg?width=800" alt="El Coliseo de Roma, Italia" width="600"></p>
+  <section id="img-introduccion-destinos">
+    <div class="container" style="background-image:url(https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/3840px-Colosseo_2020.jpg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail);" >
+      <div id="texto">
+        <h2>Italia</h2>
+        <em>Arte, historia y buena mesa</em>
+      </div>
+      </div>
+  </section>
 
-    <h3>Descripción</h3>
-    <p>Italia es un país del sur de Europa conocido por su enorme riqueza histórica y artística. Roma, Florencia y Venecia reúnen monumentos, museos y calles que cuentan siglos de historia.</p>
-    <p>Su gastronomía es famosa en todo el mundo: pasta, pizza, helados y vinos que se disfrutan en trattorias y mercados locales.</p>
-    <p>Desde la Costa Amalfitana hasta los Alpes, ofrece paisajes variados para quienes buscan cultura, descanso o aventura.</p>
+  <section id="descripcion-destino">
+    <div class="container">
+      <h2>Descripcion</h2>
+      <p>Italia es un país del sur de Europa conocido por su enorme riqueza histórica y artística. Roma, Florencia y Venecia reúnen monumentos, museos y calles que cuentan siglos de historia. 
+      Su gastronomía es famosa en todo el mundo: pasta, pizza, helados y vinos que se disfrutan en trattorias y mercados locales. <br>
+      Desde la Costa Amalfitana hasta los Alpes, ofrece paisajes variados para quienes buscan cultura, descanso o aventura
+    </div>
+  </section>
 
-    <h3>Sitios para visitar</h3>
-    <ul>
-      <li>Roma (Coliseo y Vaticano)</li>
-      <li>Florencia</li>
-      <li>Venecia</li>
-      <li>Costa Amalfitana</li>
-    </ul>
+  <section id="precio-destino">
+    <div class="container">
+      <div class="carta-destino">
+        <h3>Sitios para visitar</h3>
+        <table cellpadding="2">
+          <tr><td>Roma (coliseo y Vaticano)</td></tr>
+          <tr><td>Florencia</td></tr>
+          <tr><td>Venecia</td></tr>
+          <tr><td>Costa Amalfitana</td></tr>
+      </table>
+      </div>
 
-    <h3>Precios (USD)</h3>
-    <table border="1" cellpadding="6">
-      <tbody>
-        <tr><td>Vuelo Panamá–Roma (ida y vuelta)</td><td>US$ 1,000</td></tr>
-        <tr><td>Hospedaje (5 noches)</td><td>US$ 750</td></tr>
-        <tr><td>Tours y entradas</td><td>US$ 300</td></tr>
-        <tr><td>Transporte dentro de Italia</td><td>US$ 150</td></tr>
-        <tr><td><strong>Total estimado</strong></td><td><strong>US$ 2,200</strong></td></tr>
-      </tbody>
-    </table>
+      <div class="carta-destino">
+        <h3>Precios</h3>
+        <table cellpadding="">
+          <tbody>
+            <tr><td>Vuelo </td><td>US$ 1,000</td></tr>
+            <tr><td>Hospedaje (5 noches)</td><td>US$ 750</td></tr>
+            <tr><td>Tours y entradas</td><td>US$ 300</td></tr>
+            <tr><td><strong>Total estimado</strong></td><td><strong>US$ 2,050</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="tiempo-destino">
+      <h3>Tiempo de estadía recomendado</h3>
+      <p>7 a 8 días</p>
+    </div>
+  </section>
+  
+  <section id="video-destino">
+    <div class="container">
+      <h2>Video del destino</h2>
+      <iframe src="https://www.youtube.com/embed/-AVnmFdkA4k?si=1WbW0UVCjt5NnSe-" 
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+      gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
 
-    <h3>Tiempo de estadía recomendado</h3>
-    <p>7 a 8 días</p>
-
-    <h3>Video del destino</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/-AVnmFdkA4k?si=1WbW0UVCjt5NnSe-" 
-    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <p>Mira videos de Italia en YouTube:
-      <a href="https://www.youtube.com/results?search_query=Italia+gu%C3%ADa+de+viaje" target="_blank">ver videos de Italia</a>.</p>
-
-    <p><a href="index.html">&larr; Volver a la página principal</a></p>
-  </main>
-
-  <footer>
-    <hr>
-    <p>&copy; 2026 Viajes Virtuales - Grupo #4 - Desarrollo de Software V - UTP</p>
-  </footer>
-
+  <section id="volver-principal">
+    <div class="container">
+      <form action="index.html"><button>Volver a la pagina principal</button></form>
+    </div>
+  </section>
 </body>
 </html>
