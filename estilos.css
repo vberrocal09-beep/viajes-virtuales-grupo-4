@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1{font-size: 2em;}
+h2{font-size: 1.5em;}
+h3{font-size: 1em;}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    padding:  5px 9px;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(11, 99, 171);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(5, 49, 84); ;
+}
+
+header{
+    position: fixed;
+    background-color: rgb(0, 0, 78);
+    width: 100%;
+    
+}
+
+header .container{
+    display: flex;
+    margin: 15px 10px;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+}
+
+header p{
+    font-size: larger;
+}
+
+header a{
+    text-decoration: none;
+    padding: 0 3px;
+    font-size: smaller;
+    color: white;
+}
+
+#img-introduccion .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 45px;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#img-introduccion p{
+    padding: 0 60px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+#img-introduccion-destinos .container{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    color: white;
+    padding-top: 45px;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#img-introduccion-destinos #texto{
+    padding: 10px 60px;
+    font-size: 14px;
+    background-color: rgba(40, 41, 42, 0.49);
+    width: 100%;
+}
+
+#nuestros-destinos .container{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#nuestros-destinos #lugares{
+    display: grid;
+    grid-template-columns: 175px 175px;
+    grid-template-rows: 250px 250px;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+#lugares img{
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+
+}
+
+.cartas{
+    margin-bottom: 100px;
+}
+
+#sobre-nosotros .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: rgba(11, 99, 171, 0.229);
+    border:2px solid black;
+}
+
+#sobre-nosotros p{
+    margin-top: 5px;
+}
+
+#sobre-nosotros a{
+    text-decoration: none;
+    font-weight: bold;
+    color: darkblue;
+}
+
+#sobre-nosotros a:hover{
+    color: rgb(0, 119, 255);
+}
+
+footer{
+    background-color: rgba(130, 136, 142, 0.152);
+    text-align: end;
+    font-size:x-small;
+}
+
+#descripcion-destino .container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#descripcion-destino p{
+    font-size: 14px;
+    margin: 0 25px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#precio-destino .container{
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 200px 200px;
+    gap: 10px;
+    grid-template-rows: 100px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+#precio-destino td{
+    font-size: 13px;
+    text-align: left;
+}
+
+.carta-destino{
+    background-color: rgba(150, 128, 189, 0.5);
+    height: 100px;
+    border-radius: 10px;
+}
+
+#tiempo-destino{
+    background-color: rgb(150, 128, 189,0.5);
+    text-align: center;
+    margin: 10px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#video-destino .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#video-destino iframe{
+    margin-top: 10px;
+    width: 90%;
+    height: 33vh;
+}
+
+#volver-principal .container{
+    display: flex;
+    justify-content: center;
+
+}
+
+#volver-principal button{
+    padding: 10px;
+    font-size: medium;
+    margin-bottom: 21px;
+}
+
+#introduccion-nosotros .container{
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#introduccion-nosotros h2{
+    margin-bottom: 10px;
+}
+
+#integrantes .container{
+    font-size: 13px;
+    margin: 25px 0;
+}
+
+#integrantes th{
+    border: 2px solid;
+    background-color: rgba(150, 128, 189, 0.5);
+}
+
+#integrantes td{
+    border: 2px solid;
+    background-color: rgba(150, 128, 189, 0.077);
+    text-align: center;
+}
+
+#integrantes a{
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+#integrantes a:hover{
+    text-decoration: underline;
+    color: rgb(37, 19, 53);
+    font-weight: bold;
+}
